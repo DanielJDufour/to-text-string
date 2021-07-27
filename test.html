@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="./node_modules/flug/index.js"></script>
+    <script src="./to-text-string.js"></script>
+  </head>
+  <body>
+    <script>
+      const text = "test";
+      const arrayBuffer = new Uint8Array(Array.from("test").map(c => c.charCodeAt(0))).buffer;
+      test("ArrayBuffer", ({ eq }) => {
+        eq(toTextString(arrayBuffer), text);
+      });
+    </script>
+  </body>
+</html>
