@@ -6,6 +6,9 @@ Convert Various Data Formats, including ArrayBuffer and Buffer, to a Text String
 npm install to-text-string
 ```
 
+# limitations
+- only works on ASCII text
+
 # usage
 ```js
 const toTextString = require("to-text-string");
